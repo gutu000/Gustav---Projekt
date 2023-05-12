@@ -105,6 +105,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(111, 212);
             this.textBox1.Name = "textBox1";
@@ -124,6 +125,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox3.Location = new System.Drawing.Point(12, 291);
@@ -164,11 +166,12 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "Tal: "});
+            ""});
             this.listBox1.Location = new System.Drawing.Point(246, 254);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(142, 109);
             this.listBox1.TabIndex = 15;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -176,9 +179,9 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(246, 234);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 17);
+            this.label9.Size = new System.Drawing.Size(101, 17);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Mina gissningar";
+            this.label9.Text = "Dina gissningar";
             // 
             // label10
             // 
@@ -195,8 +198,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(400, 374);
+            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ClientSize = new System.Drawing.Size(399, 375);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.listBox1);
